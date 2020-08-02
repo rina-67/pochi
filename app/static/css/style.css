@@ -1,0 +1,56 @@
+body{
+    letter-spacing: 0.1em;
+}
+
+h1{
+    color: gray;
+}
+
+span{
+    color:pink;
+}
+
+#text1{
+    padding:10px 15px;
+    margin: 0px 10px 10px 10px;
+    font-size:16px;
+    border-radius:3px;
+    border:2px solid #ddd;
+    box-sizing:border-box;
+    letter-spacing: 0.1em;
+}
+
+#text1:focus{
+    border:2px solid #feffa6;
+    z-index:10;
+    outline:0;
+}
+
+.far{
+    color: aquamarine;
+    padding:0.2em;
+    font-size:20px;
+}
+
+
+input[type="submit"],
+input[type="button"] {
+    background-color:#ffffff;
+  border-radius: 0.2em;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  appearance: button;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding:0.3em;
+}
+input[type="submit"]::-webkit-search-decoration,
+input[type="button"]::-webkit-search-decoration {
+  display: none;
+}
+input[type="submit"]::focus,
+input[type="button"]::focus {
+    border:2px solid #ddd;
+    outline-offset: -2px;
+}

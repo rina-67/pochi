@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{name}}</title>
+        <script src="https://kit.fontawesome.com/df193849aa.js" crossorigin="anonymous"></script>
+        <link rel=stylesheet type="text/css" href="{{ url_for('static',filename='css/style.css')}}">
+    </head> 
+        <body>
+            {% if name == "pochi" %}
+            <h1>ぼくは<span>ポチ</span>！おにく大好き！</h1>
+            {% elif name %}
+            <h1>ぼくは{{name}}だよ！</h1>
+            {% else %}
+            <h1>名前はまだない</h1>
+            {% endif %}
+            <form action="/index" method='POST'>
+                <input id="text1" type="text" name="name" placeholder="Enter name">
+                <input id="submit1" type="submit" class='far' value="&#xf1d8;">
+            </form>
+            <img src="/static/images/wan.jpg" alt="犬">
+        </body>
+</html>
